@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between images as needed */
+  justify-content: space-around;
+}
+
+.gallery img {
+  max-width: 25vw;
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .gallery img {
+    max-width: 100%;
+  }
+}
+
